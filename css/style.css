@@ -34,9 +34,52 @@
     width: 10%;
 }
 
+/* height */
+.h-90 {
+    height: 90%;
+}
+.h-80 {
+    height: 80%;
+}
+.h-70 {
+    height: 70%;
+}
+.h-60 {
+    height: 60%;
+}
+
+.h-40 {
+    height: 40%;
+}
+.h-30 {
+    height: 30%;
+}
+.h-20 {
+    height: 20%;
+}
+.h-10 {
+    height: 10%;
+}
+
 /* ================
     Main
 ================ */
+.product-by-categorie {
+    margin-top: 20px;
+}
+.product-by-categorie .carousel-control-prev,
+.product-by-categorie .carousel-control-next {
+    color: #000;
+    width: 50px;
+}
+.product-by-categorie .carousel-control-prev:hover,
+.product-by-categorie .carousel-control-next:hover {
+    background-color: #dadada;
+}
+
+.product-by-categorie .card {
+    height: 500px;
+}
 
 /* ================
     Tablet Device
@@ -49,6 +92,10 @@
     .hero-curousel-section p {
         font-size: 14px;
     }
+
+    .product-by-categorie .card {
+        height: 400px;
+    }
 }
 /* ================
     Mobile Device
@@ -60,5 +107,10 @@
     }
     .hero-curousel-section h2 {
         font-size: 18px;
+    }
+
+    .product-by-categorie .card {
+        height: 500px;
+        margin-bottom: 20px;
     }
 }

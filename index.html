@@ -10,6 +10,7 @@
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- Custome Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -41,9 +42,9 @@
                                 Product
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Shoes</a></li>
-                                <li><a class="dropdown-item" href="#">Backpack</a></li>
-                                <li><a class="dropdown-item" href="#">Watch</a></li>
+                                <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+                                <li><a class="dropdown-item" href="#bags">Backpack</a></li>
+                                <li><a class="dropdown-item" href="#watch">Watch</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -62,71 +63,71 @@
     <main>
         <!-- Curousel -->
         <section class="container-lg mt-5 px-0 px-lg-2 hero-curousel-section">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="heroslider" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner bg-dark text-light">
                     <div class="carousel-item active">
                         <div class="row w-90 px-1 py-5 p-sm-5 p-md-5 p-lg-5 m-auto align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <h1>Cool Dude Headphone</h1>
-                                <p class="d-none d-sm-block d-md-block d-lg-block">
+                                <p class="d-none d-sm-block">
                                     This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.
                                 </p>
                                 <h2>$500</h2>
                                 <a href="#" class="btn btn-warning mt-3">Buy Now</a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <img src="images/banner-images/headphone.png" class="d-block h-50 w-100" alt="...">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row w-90 px-1 py-5 p-sm-5 p-md-5 p-lg-5 m-auto align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <h1>Mega LCD TV For Sports</h1>
-                                <p class="d-none d-sm-block d-md-block d-lg-block">
+                                <p class="d-none d-sm-block">
                                     This is the best x-box in the world for people who just want to waste time in front
                                     of fake sports.
                                 </p>
                                 <h2>$650</h2>
                                 <a href="#" class="btn btn-warning mt-3">Buy Now</a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <img src="images/banner-images/tv.png" class="d-block h-50 w-100" alt="...">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row w-90 px-1 py-5 p-sm-5 p-md-5 p-lg-5 m-auto align-items-center">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <h1>X-Box For Your Living Room</h1>
-                                <p class="d-none d-sm-block d-md-block d-lg-block">
+                                <p class="d-none d-sm-block">
                                     This is the best x-box in the world for people who just want to waste time in front
                                     of fake sports.
                                 </p>
                                 <h2>$600</h2>
                                 <a href="#" class="btn btn-warning mt-3">Buy Now</a>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="col-6">
                                 <img src="images/banner-images/xbox.png" class="d-block h-50 w-100" alt="...">
                             </div>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev d-none d-sm-block d-md-block d-lg-block" type="button"
-                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    data-bs-target="#heroslider" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next d-none d-sm-block d-md-block d-lg-block" type="button"
-                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    data-bs-target="#heroslider" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
         <!-- END Curousel -->
-        <!-- Categories -->
+        <!-- Categories Box -->
         <section class="container-lg py-lg-5 py-md-4 py-sm-3 py-2">
             <div class="row gy-3">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-12">
@@ -152,6 +153,585 @@
                 </div>
             </div>
         </section>
+        <!-- END Categories Box -->
+        <!-- Product by categorie -->
+        <!-- Watch -->
+        <section class="container product-by-categorie">
+            <div class="row">
+                <div class="col-8 col-xl-11 col-lg-10 col-md-10 col-sm-8">
+                    <h1 class="section-heding">Watch</h1>
+                </div>
+                <div class="col-3 col-xl-1 col-lg-2 col-md-2 col-sm-3 position-relative d-none d-sm-block" id="watch">
+                    <a class="carousel-control-prev border" href="#product-watch-slider" role="button"
+                        data-bs-slide="prev">
+                        <i class="bi bi-chevron-left fs-3 fw-bold"></i>
+                    </a>
+                    <a class="carousel-control-next border" href="#product-watch-slider" role="button"
+                        data-bs-slide="next">
+                        <i class="bi bi-chevron-right fs-3 fw-bold"></i>
+                    </a>
+
+                </div>
+                <div class="col-1 col-xl-1 d-lg-none d-md-none col-sm-1">
+                </div>
+            </div>
+            <hr class="mb-5">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div id="product-watch-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/businessman-checking-time.png"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Formal Fasionable Watch</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                    adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/closeup-shot-golden-watch-isolated.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Golden Watch Isolated</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/elegant-watch-with-silver-golden-chain-isolated.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elegent Watch With Silver Golden Chain</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/fabian-heimann-4R_WEmhx8og-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Formal Fasionable Watch</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/john-torcasio-TJrkkhdB39E-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Golden Watch Isolated</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/watch/pixel-bee-u8isJQ6QjF4-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elegent Watch With Silver Golden Chain</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This div is only for mobile device -->
+            <div class="row d-block d-sm-none">
+                <div class="col-12">
+                    <div class="card">
+                        <img src="images/watch/businessman-checking-time.png" class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Formal Fasionable Watch</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                laboriosam velit. Perspiciatis, voluptates?</p>
+                            <h5 class="text-muted">Price: $200</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/watch/closeup-shot-golden-watch-isolated.jpg" class="card-img-top h-40"
+                            alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Golden Watch Isolated</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                cum aliquid illum itaque harum!</p>
+                            <h5 class="text-muted">Price: $200</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/watch/elegant-watch-with-silver-golden-chain-isolated.jpg"
+                            class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Elegent Watch With Silver Golden Chain</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                aliquid vero quod magni.</p>
+                            <h5 class="text-muted">Price: $200</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-warning w-100">Show More Watches</a>
+                </div>
+            </div>
+        </section>
+        <!-- Bags -->
+        <section class="container product-by-categorie">
+            <div class="row">
+                <div class="col-8 col-xl-11 col-lg-10 col-md-10 col-sm-8">
+                    <h1 class="section-heding">Bags</h1>
+                </div>
+                <div class="col-3 col-xl-1 col-lg-2 col-md-2 col-sm-3 position-relative d-none d-sm-block" id="bags">
+                    <a class="carousel-control-prev border" href="#product-bags-slider" role="button"
+                        data-bs-slide="prev">
+                        <i class="bi bi-chevron-left fs-3 fw-bold"></i>
+                    </a>
+                    <a class="carousel-control-next border" href="#product-bags-slider" role="button"
+                        data-bs-slide="next">
+                        <i class="bi bi-chevron-right fs-3 fw-bold"></i>
+                    </a>
+
+                </div>
+                <div class="col-1 col-xl-1 d-lg-none d-md-none col-sm-1">
+                </div>
+            </div>
+            <hr class="mb-5">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div id="product-bags-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/bag-1.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Formal Fasionable Bags</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                    adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $120</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/jakob-owens-BmH09wAkJa8-unsplash.png"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Lather Bag Nature</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $250</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/bag-2.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bags for kids</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $150</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/k8-VDow9qDDMKc-unsplash (1).jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">White Ladies Bagpack</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/bag-3.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Black Color Man Bag for travel</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/bags/surya-a-1Frndjy7tkM-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Lather Twince Bag</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This div is only for mobile device -->
+            <div class="row d-block d-sm-none">
+                <div class="col-12">
+                    <div class="card">
+                        <img src="images/bags/bag-1.png" class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Formal Fasionable Bags</h3>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                laboriosam velit. Perspiciatis, voluptates?</p>
+                            <h5 class="text-muted">Price: $120</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/bags/jakob-owens-BmH09wAkJa8-unsplash.png" class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Lather Bag Nature</h3>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                consectetur adipisicing
+                                elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                cum aliquid illum itaque harum!</p>
+                            <h5 class="text-muted">Price: $250</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/bags/k8-VDow9qDDMKc-unsplash (1).jpg" class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">White Ladies Bagpack</h3>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                laboriosam velit. Perspiciatis, voluptates?</p>
+                            <h5 class="text-muted">Price: $200</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-warning w-100">Show More Bags</a>
+                </div>
+            </div>
+        </section>
+        <!-- Shoes -->
+        <section class="container product-by-categorie">
+            <div class="row">
+                <div class="col-8 col-xl-11 col-lg-10 col-md-10 col-sm-8">
+                    <h1 class="section-heding">Shoes</h1>
+                </div>
+                <div class="col-3 col-xl-1 col-lg-2 col-md-2 col-sm-3 position-relative d-none d-sm-block" id="shoes">
+                    <a class="carousel-control-prev border" href="#product-shoes-slider" role="button"
+                        data-bs-slide="prev">
+                        <i class="bi bi-chevron-left fs-3 fw-bold"></i>
+                    </a>
+                    <a class="carousel-control-next border" href="#product-shoes-slider" role="button"
+                        data-bs-slide="next">
+                        <i class="bi bi-chevron-right fs-3 fw-bold"></i>
+                    </a>
+
+                </div>
+                <div class="col-1 col-xl-1 d-lg-none d-md-none col-sm-1">
+                </div>
+            </div>
+            <hr class="mb-5">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div id="product-shoes-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/maksim-larin-ezdrvzA1hZw-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Formal Fasionable Shoes</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur
+                                                    adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $120</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/shoe-1.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Soft Jumping Shoe</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $250</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/mitchel-lensink-1BI-ar91C7U-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Brand shoe</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $150</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row row-cols-md-3 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/shoe-2.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Nick Light Shoes</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                                    laboriosam velit. Perspiciatis, voluptates?</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/revolt-164_6wVEHfI-unsplash.jpg"
+                                                class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Nick Red Shoe</h3>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                                    consectetur adipisicing
+                                                    elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                                    cum aliquid illum itaque harum!</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <img src="images/shoes/shoe-3.png" class="card-img-top h-40" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nick Shoe AIRMAX</h5>
+                                                <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                                    aliquid vero quod magni.</p>
+                                                <h5 class="text-muted">Price: $200</h5>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="#" class="btn btn-warning">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This div is only for mobile device -->
+            <div class="row d-block d-sm-none">
+                <div class="col-12">
+                    <div class="card">
+                        <img src="images/shoes/maksim-larin-ezdrvzA1hZw-unsplash.jpg" class="card-img-top h-40"
+                            alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Formal Fasionable Shoes</h3>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. Repellendus nemo natus quam minima, officiis sunt similique
+                                laboriosam velit. Perspiciatis, voluptates?</p>
+                            <h5 class="text-muted">Price: $120</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top h-40" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Soft Jumping Shoe</h3>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit, amet
+                                consectetur adipisicing
+                                elit. Veniam adipisci ullam exercitationem quam, impedit assumenda
+                                cum aliquid illum itaque harum!</p>
+                            <h5 class="text-muted">Price: $250</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/shoes/mitchel-lensink-1BI-ar91C7U-unsplash.jpg" class="card-img-top h-40"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brand shoe</h5>
+                            <p class="card-text d-md-none d-lg-block">Lorem ipsum dolor sit amet
+                                consectetur adipisicing
+                                elit. Harum animi natus totam voluptate possimus voluptatem cumque
+                                aliquid vero quod magni.</p>
+                            <h5 class="text-muted">Price: $150</h5>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-warning">Buy Now</a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-warning w-100">Show More Shoe </a>
+                </div>
+            </div>
+        </section>
+        <!-- END Product by categorie -->
+        <!-- Subscribe for Newslater -->
+        <section class="container-lg px-0 px-lg-2">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Subscribe For Newslater</h2>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
 
